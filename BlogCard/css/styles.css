@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6d150;
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+}
+
+.card {
+  background-color: aliceblue;
+  width: 20vw;
+  padding: 20px;
+  border-radius: 24px;
+  border: #1f1f1f 2.5px solid;
+  box-shadow: 5px 5px #000;
+  transition: border 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  border: none;
+  box-shadow: none;
+}
+
+.card-img {
+  border: #1f1f1f 2.5px solid;
+  object-fit: cover;
+  width: 20vw;
+  height: 150px;
+  border-radius: 12px;
+}
+
+.card-pfp {
+  align-items: center;
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 64px;
+  border: #1f1f1f 2.5px solid;
+}
+
+.card-tag {
+  background-color: #f6d150;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-date {
+  font-size: 12px;
+}
+
+.card-desc {
+  color: #909090;
+  font-size: 12px;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-user {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Styles for iPhones */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .card {
+    width: 80vw;
+  }
+  .card-img {
+    width: 80vw;
+  }
+}
+
+/* For iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
