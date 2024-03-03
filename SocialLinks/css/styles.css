@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #141414;
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+}
+
+.pfp {
+  align-items: center;
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: 64px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item-row {
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #333333;
+  width: 400px;
+  text-align: center;
+}
+
+.item-row:last-child {
+  margin-bottom: 20px;
+}
+
+.item-text {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Styles for iPhones */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .item-row {
+    width: 80vw;
+  }
+}
+
+/* For iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+}
